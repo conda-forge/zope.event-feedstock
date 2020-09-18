@@ -5,7 +5,7 @@ Home: http://github.com/zopefoundation/zope.event
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Very basic event publishing system
 
