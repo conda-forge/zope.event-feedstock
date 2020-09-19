@@ -1,11 +1,11 @@
 About zope.event
 ================
 
-Home: http://github.com/zopefoundation/zope.event
+Home: https://github.com/zopefoundation/zope.event
 
-Package license: BSD-3-Clause
+Package license: ZPL-2.1
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Very basic event publishing system
 
