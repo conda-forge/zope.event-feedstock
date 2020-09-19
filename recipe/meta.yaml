@@ -37,7 +37,9 @@ about:
   home: https://github.com/zopefoundation/zope.event
   summary: Very basic event publishing system
   license: ZPL-2.1
-  license_file: LICENSE.txt
+  license_file:
+    - LICENSE.txt
+    - COPYRIGHT.txt
   doc_url: https://zopeevent.readthedocs.io
 
 extra:
