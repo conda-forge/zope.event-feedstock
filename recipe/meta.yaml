@@ -1,13 +1,12 @@
-{% set name = "zope.event" %}
-{% set version = "4.5.0" %}
+{% set version = "4.6" %}
 
 package:
-  name: {{ name }}
+  name: zope.event
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e76517f5b9b119acf37ca8819781db6c16ea433f7e2062c4afc2b6fbedb1330
+  url: https://pypi.io/packages/source/z/zope.event/zope.event-{{ version }}.tar.gz
+  sha256: 81d98813046fc86cc4136e3698fee628a3282f9c320db18658c21749235fce80
 
 build:
   number: 0
@@ -17,9 +16,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
   run:
-    - python
+    - python >=2.7
     - setuptools
 
 test:
@@ -27,8 +26,8 @@ test:
     - zope
     - zope.event
   commands:
-    - python -m pip check
-    - python -m pytest -vv --pyargs zope.event.tests --cov zope.event
+    - pip check
+    - pytest -vv --pyargs zope.event.tests --cov=zope.event --cov-report=term-missing:skip-covered
   requires:
     - pip
     - pytest-cov
