@@ -1,4 +1,4 @@
-{% set version = "4.6" %}
+{% set version = "5.0" %}
 
 package:
   name: zope.event
@@ -6,19 +6,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/z/zope.event/zope.event-{{ version }}.tar.gz
-  sha256: 81d98813046fc86cc4136e3698fee628a3282f9c320db18658c21749235fce80
+  sha256: bac440d8d9891b4068e2b5a2c5e2c9765a9df762944bda6955f96bb9b91e67cd
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.7
   run:
-    - python >=2.7
+    - python >=3.7
     - setuptools
 
 test:
