@@ -5,20 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/z/zope.event/zope.event-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/z/zope.event/zope.event-{{ version }}.tar.gz
   sha256: bac440d8d9891b4068e2b5a2c5e2c9765a9df762944bda6955f96bb9b91e67cd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
+    # uses `pkg_resources`
     - setuptools
 
 test:
@@ -31,6 +33,7 @@ test:
   requires:
     - pip
     - pytest-cov
+    - python {{ python_min }}
 
 about:
   home: https://github.com/zopefoundation/zope.event
