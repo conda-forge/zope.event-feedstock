@@ -9,7 +9,7 @@ Package license: ZPL-2.1
 
 Summary: Very basic event publishing system
 
-Documentation: https://zopeevent.readthedocs.io
+Documentation: https://zopeevent.readthedocs.io/
 
 Current build status
 ====================
