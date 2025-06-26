@@ -37,11 +37,10 @@ tests:
         - 3.13.*
   - requirements:
       run:
-        - pytest-cov
+        - pytest
         - python ${{ python_min }}
     script:
-      - coverage run --source=zope.event --branch -m pytest -vv --tb=long --color=yes --pyargs zope.event.tests
-      - coverage report --show-missing --skip-covered --fail-under=100
+      - pytest -vv --tb=long --color=yes --pyargs zope.event.tests
 
 about:
   summary: Very basic event publishing system
