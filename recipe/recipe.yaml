@@ -3,6 +3,7 @@ schema_version: 1
 
 context:
   version: "5.1.1"
+  setuptool_min: "75.8.2"
 
 package:
   name: zope.event
@@ -22,11 +23,11 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools >=${{ setuptool_min }}
   run:
     - python >=${{ python_min }}
     # uses `pkg_resources`
-    - setuptools
+    - setuptools >=${{ setuptool_min }}
 
 tests:
   - python:
