@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "6.0"
+  version: "6.1"
   setuptools_min: "75.8.2"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/z/zope.event/zope_event-${{ version }}.tar.gz
-  sha256: 0ebac894fa7c5f8b7a89141c272133d8c1de6ddc75ea4b1f327f00d1f890df92
+  sha256: 6052a3e0cb8565d3d4ef1a3a7809336ac519bc4fe38398cb8d466db09adef4f0
 
 build:
   number: 0
