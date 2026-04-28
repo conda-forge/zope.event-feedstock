@@ -3,6 +3,7 @@ schema_version: 1
 
 context:
   version: "6.2"
+  python_check_max: "3.14"
 
 package:
   name: zope.event
@@ -32,7 +33,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.14.*
+        - ${{ python_check_max }}.*
   - requirements:
       run:
         - pytest
@@ -46,7 +47,8 @@ about:
   license_file:
     - LICENSE.txt
     - COPYRIGHT.txt
-  homepage: https://github.com/zopefoundation/zope.event
+  homepage: https://pypi.org/project/zope.event
+  repository: https://github.com/zopefoundation/zope.event
   documentation: https://zopeevent.readthedocs.io
 
 extra:
