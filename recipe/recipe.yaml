@@ -2,7 +2,8 @@
 schema_version: 1
 
 context:
-  version: "6.1"
+  version: "6.2"
+  python_check_max: "3.14"
 
 package:
   name: zope.event
@@ -10,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/z/zope.event/zope_event-${{ version }}.tar.gz
-  sha256: 6052a3e0cb8565d3d4ef1a3a7809336ac519bc4fe38398cb8d466db09adef4f0
+  sha256: b97d5d6327067ee6b9dfcbdf606ade9ade70991e19c162e808ea39e5fcf0f8d3
 
 build:
   number: 0
@@ -32,7 +33,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.14.*
+        - ${{ python_check_max }}.*
   - requirements:
       run:
         - pytest
@@ -46,7 +47,8 @@ about:
   license_file:
     - LICENSE.txt
     - COPYRIGHT.txt
-  homepage: https://github.com/zopefoundation/zope.event
+  homepage: https://pypi.org/project/zope.event
+  repository: https://github.com/zopefoundation/zope.event
   documentation: https://zopeevent.readthedocs.io
 
 extra:
