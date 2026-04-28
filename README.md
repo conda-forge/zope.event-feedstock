@@ -3,11 +3,13 @@ About zope.event-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zope.event-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/zopefoundation/zope.event
+Home: https://pypi.org/project/zope.event
 
 Package license: ZPL-2.1
 
 Summary: Very basic event publishing system
+
+Development: https://github.com/zopefoundation/zope.event
 
 Documentation: https://zopeevent.readthedocs.io/
 
